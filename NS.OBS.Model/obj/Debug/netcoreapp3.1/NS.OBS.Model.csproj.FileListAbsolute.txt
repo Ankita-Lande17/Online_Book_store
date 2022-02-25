@@ -1,0 +1,10 @@
+D:\tutorials\OBS\NS.OBS.Model\bin\Debug\netcoreapp3.1\NS.OBS.Model.deps.json
+D:\tutorials\OBS\NS.OBS.Model\bin\Debug\netcoreapp3.1\NS.OBS.Model.dll
+D:\tutorials\OBS\NS.OBS.Model\bin\Debug\netcoreapp3.1\NS.OBS.Model.pdb
+D:\tutorials\OBS\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.csproj.AssemblyReference.cache
+D:\tutorials\OBS\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\tutorials\OBS\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.AssemblyInfoInputs.cache
+D:\tutorials\OBS\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.AssemblyInfo.cs
+D:\tutorials\OBS\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.csproj.CoreCompileInputs.cache
+D:\tutorials\OBS\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.dll
+D:\tutorials\OBS\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.pdb

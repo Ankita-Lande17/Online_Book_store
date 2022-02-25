@@ -1,0 +1,16 @@
+D:\tutorials\OBS\NS.OBS.Data\bin\Debug\netcoreapp3.1\NS.OBS.Data.deps.json
+D:\tutorials\OBS\NS.OBS.Data\bin\Debug\netcoreapp3.1\NS.OBS.Data.runtimeconfig.json
+D:\tutorials\OBS\NS.OBS.Data\bin\Debug\netcoreapp3.1\NS.OBS.Data.runtimeconfig.dev.json
+D:\tutorials\OBS\NS.OBS.Data\bin\Debug\netcoreapp3.1\NS.OBS.Data.dll
+D:\tutorials\OBS\NS.OBS.Data\bin\Debug\netcoreapp3.1\NS.OBS.Data.pdb
+D:\tutorials\OBS\NS.OBS.Data\obj\Debug\netcoreapp3.1\NS.OBS.Data.csproj.AssemblyReference.cache
+D:\tutorials\OBS\NS.OBS.Data\obj\Debug\netcoreapp3.1\NS.OBS.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\tutorials\OBS\NS.OBS.Data\obj\Debug\netcoreapp3.1\NS.OBS.Data.AssemblyInfoInputs.cache
+D:\tutorials\OBS\NS.OBS.Data\obj\Debug\netcoreapp3.1\NS.OBS.Data.AssemblyInfo.cs
+D:\tutorials\OBS\NS.OBS.Data\obj\Debug\netcoreapp3.1\NS.OBS.Data.csproj.CoreCompileInputs.cache
+D:\tutorials\OBS\NS.OBS.Data\obj\Debug\netcoreapp3.1\NS.OBS.Data.dll
+D:\tutorials\OBS\NS.OBS.Data\obj\Debug\netcoreapp3.1\NS.OBS.Data.pdb
+D:\tutorials\OBS\NS.OBS.Data\obj\Debug\netcoreapp3.1\NS.OBS.Data.genruntimeconfig.cache
+D:\tutorials\OBS\NS.OBS.Data\bin\Debug\netcoreapp3.1\NS.OBS.Model.dll
+D:\tutorials\OBS\NS.OBS.Data\bin\Debug\netcoreapp3.1\NS.OBS.Model.pdb
+D:\tutorials\OBS\NS.OBS.Data\obj\Debug\netcoreapp3.1\NS.OBS.Data.csproj.CopyComplete

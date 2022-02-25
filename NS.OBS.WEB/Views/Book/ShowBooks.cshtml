@@ -1,0 +1,36 @@
+﻿@using NS.OBS.Data.Entities;
+@model List<NS.OBS.Model.BookModel>
+
+
+<h2>Book Details</h2>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">BookID</th>
+            <th scope="col">BookName</th>
+            <th scope="col">Category</th>
+            <th scope="col">Author</th>
+            <th scope="col">Publisher</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.BookId</td>
+            <td>@item.BookName</td>
+            <td>@item.Category</td>
+            <td>@item.Author</td>
+            <td>@item.Publisher</td>
+            <td>@item.Description</td>
+            <td>@Html.ActionLink("EditBook", "EditBook", new { Id = @item.BookId })</td>
+            <td>@Html.ActionLink("DeleteBook", "DeleteBook", new { id = @item.BookId })</td>
+            
+            
+        </tr>
+
+        }
+    </tbody>
+</table>

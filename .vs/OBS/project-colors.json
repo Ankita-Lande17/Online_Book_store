@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "01459897-3200-4d09-81b1-338568b455d9": {
+      "ProjectGuid": "01459897-3200-4d09-81b1-338568b455d9",
+      "DisplayName": "NS.OBS.WEB",
+      "ColorIndex": 0
+    },
+    "50b73f07-74a9-4a90-9a2e-591de46629a5": {
+      "ProjectGuid": "50b73f07-74a9-4a90-9a2e-591de46629a5",
+      "DisplayName": "NS.OBS.Data",
+      "ColorIndex": 1
+    },
+    "3fce85bc-9fe6-464e-93d0-d3ea27032495": {
+      "ProjectGuid": "3fce85bc-9fe6-464e-93d0-d3ea27032495",
+      "DisplayName": "NS.OBS.Model",
+      "ColorIndex": 2
+    },
+    "b002a677-155d-4a04-b58b-5435e19cc020": {
+      "ProjectGuid": "b002a677-155d-4a04-b58b-5435e19cc020",
+      "DisplayName": "NS.OBS.Business",
+      "ColorIndex": 3
+    },
+    "43f3bf19-cc71-49ab-ad8f-4fb88f344538": {
+      "ProjectGuid": "43f3bf19-cc71-49ab-ad8f-4fb88f344538",
+      "DisplayName": "NS.OBS.Repository",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

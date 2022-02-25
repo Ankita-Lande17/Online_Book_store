@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NS.OBS.Business\NS.OBS.Business.csproj" />
+    <ProjectReference Include="..\NS.OBS.Data\NS.OBS.Data.csproj" />
+    <ProjectReference Include="..\NS.OBS.Model\NS.OBS.Model.csproj" />
+    <ProjectReference Include="..\NS.OBS.Repository\NS.OBS.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "NS.OBS.Model/1.0.0": {
+        "runtime": {
+          "NS.OBS.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NS.OBS.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
