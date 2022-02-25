@@ -11,16 +11,18 @@ namespace NS.OBS.Repository
 {
     public class BookRepo : IBookRepo
     {
-        public bool AddBook(BookModel bookModel)
+
+        //updated - Shubham
+        public bool AddBook(BookDetail detail)
         {
             using (var context = new BookDBContext())
             {
                 var paraamList = new List<SqlParameter>();
-                paraamList.Add(new SqlParameter("@BookName", bookModel.BookName));
-                paraamList.Add(new SqlParameter("@Category", bookModel.Category));
-                paraamList.Add(new SqlParameter("@Author", bookModel.Author));
-                paraamList.Add(new SqlParameter("@Publisher", bookModel.Publisher));
-                paraamList.Add(new SqlParameter("@Description", bookModel.Description));
+                paraamList.Add(new SqlParameter("@BookName", detail.BookName));
+                paraamList.Add(new SqlParameter("@Category", detail.Category));
+                paraamList.Add(new SqlParameter("@Author", detail.Author));
+                paraamList.Add(new SqlParameter("@Publisher", detail.Publisher));
+                paraamList.Add(new SqlParameter("@Description", detail.Description));
                 context.Database.ExecuteSqlRaw("uspAddBook @BookName,@Category, @Author, @Publisher, @Description", paraamList);
 
             }
@@ -56,17 +58,19 @@ namespace NS.OBS.Repository
             }
             return returnList;
         }
-        public bool FinalUpdate(BookModel bookModel)
+
+        //Update - Shubham
+        public bool FinalUpdate(BookDetail detail)
         {
             using (var context = new BookDBContext())
             {
                 var paraamList = new List<SqlParameter>();
-                paraamList.Add(new SqlParameter("@BookId", bookModel.BookId));
-                paraamList.Add(new SqlParameter("@BookName", bookModel));
-                paraamList.Add(new SqlParameter("@Category", bookModel.Category));
-                paraamList.Add(new SqlParameter("@Author", bookModel.Author));
-                paraamList.Add(new SqlParameter("@Publisher", bookModel.Publisher));
-                paraamList.Add(new SqlParameter("@Description", bookModel.Description));
+                paraamList.Add(new SqlParameter("@BookId", detail.BookId));
+                paraamList.Add(new SqlParameter("@BookName", detail.BookName));
+                paraamList.Add(new SqlParameter("@Category", detail.Category));
+                paraamList.Add(new SqlParameter("@Author", detail.Author));
+                paraamList.Add(new SqlParameter("@Publisher", detail.Publisher));
+                paraamList.Add(new SqlParameter("@Description", detail.Description));
                 context.Database.ExecuteSqlRaw("uspFinalUpdate @BookId,@Category,@Author,@Publisher,@Description ", paraamList);
 
             }
