@@ -15,9 +15,9 @@ namespace NS.OBS.Repository
         List<BookModel> UpdateBook(int id);
 
 
-        public bool FinalUpdate(BookDetail detail);
+        public bool FinalUpdate(BookDetail detail,int BookId);
 
-        public List<BookModel> DeleteBook(int id);
-        public bool FinalDelete(BookModel bookModel);
+         bool FinalDelete(BookModel bookModel, int BookId);
+        BookDetail GetBookById(int BookId);
     }
 }

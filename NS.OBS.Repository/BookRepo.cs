@@ -60,7 +60,7 @@ namespace NS.OBS.Repository
         }
 
         //Update - Shubham
-        public bool FinalUpdate(BookDetail detail)
+        public bool FinalUpdate(BookDetail detail, int BookId)
         {
             using (var context = new BookDBContext())
             {
@@ -71,22 +71,13 @@ namespace NS.OBS.Repository
                 paraamList.Add(new SqlParameter("@Author", detail.Author));
                 paraamList.Add(new SqlParameter("@Publisher", detail.Publisher));
                 paraamList.Add(new SqlParameter("@Description", detail.Description));
-                context.Database.ExecuteSqlRaw("uspFinalUpdate @BookId,@Category,@Author,@Publisher,@Description ", paraamList);
+                context.Database.ExecuteSqlRaw("uspFinalUpdate @BookId,@BookName,@Category,@Author,@Publisher,@Description ", paraamList);
 
             }
             return true;
         }
-        public List<BookModel> DeleteBook(int id)
-        {
-            List<BookModel> returnList = new List<BookModel>();
-            using (var context = new BookDBContext())
-            {
-
-                returnList = context.CustomBookModel.FromSqlRaw("uspUpdateBook {0}", id).ToList();
-            }
-            return returnList;
-        }
-        public bool FinalDelete(BookModel bookModel)
+       
+        public bool FinalDelete(BookModel bookModel,int BookId)
         {
             using (var context = new BookDBContext())
             {
@@ -96,6 +87,14 @@ namespace NS.OBS.Repository
 
             }
             return true;
+        }
+        public BookDetail GetBookById(int BookId)
+        {
+            using (var context = new BookDBContext())
+            {
+                var bookId = context.BookDetail.SingleOrDefault(x => x.BookId == BookId);
+                return bookId;
+            }
         }
     }
 }

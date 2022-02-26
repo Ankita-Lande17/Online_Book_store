@@ -25,8 +25,9 @@
             <td>@item.Author</td>
             <td>@item.Publisher</td>
             <td>@item.Description</td>
-            <td>@Html.ActionLink("EditBook", "EditBook", new { Id = @item.BookId })</td>
-            <td>@Html.ActionLink("DeleteBook", "DeleteBook", new { id = @item.BookId })</td>
+            <td>@Html.ActionLink("EditBook", "GetBookById", new { BookId = @item.BookId })</td>
+            <td>@Html.ActionLink("DeleteBook", "Delete", new { BookId = @item.BookId })</td>
+             <td>@Html.ActionLink("UpdateBook", "Update", new { BookId = @item.BookId })</td>
             
             
         </tr>

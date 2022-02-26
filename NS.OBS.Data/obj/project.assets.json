@@ -5011,19 +5011,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\harsh jangid\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj",
+      "projectUniqueName": "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj",
       "projectName": "NS.OBS.Data",
-      "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj",
-      "packagesPath": "C:\\Users\\harsh jangid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Data\\obj\\",
+      "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\harsh jangid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5037,8 +5037,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
-              "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj"
+            "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
+              "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj"
             }
           }
         }
@@ -5079,7 +5079,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

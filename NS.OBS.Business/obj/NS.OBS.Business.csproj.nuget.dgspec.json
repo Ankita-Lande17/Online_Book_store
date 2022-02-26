@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj": {}
+    "D:\\Online_book\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj": {
+    "D:\\Online_book\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj",
+        "projectUniqueName": "D:\\Online_book\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj",
         "projectName": "NS.OBS.Business",
-        "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj",
-        "packagesPath": "C:\\Users\\harsh jangid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Business\\obj\\",
+        "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\harsh jangid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj": {
-                "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj"
+              "D:\\Online_book\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj": {
+                "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj": {
+    "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj",
+        "projectUniqueName": "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj",
         "projectName": "NS.OBS.Data",
-        "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj",
-        "packagesPath": "C:\\Users\\harsh jangid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Data\\obj\\",
+        "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\harsh jangid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,8 +86,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
-                "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj"
+              "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
+                "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj"
               }
             }
           }
@@ -128,21 +128,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
+    "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
+        "projectUniqueName": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
         "projectName": "NS.OBS.Model",
-        "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
-        "packagesPath": "C:\\Users\\harsh jangid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\obj\\",
+        "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\harsh jangid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,21 +182,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj": {
+    "D:\\Online_book\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj",
+        "projectUniqueName": "D:\\Online_book\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj",
         "projectName": "NS.OBS.Repository",
-        "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj",
-        "packagesPath": "C:\\Users\\harsh jangid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Repository\\obj\\",
+        "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\harsh jangid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,11 +210,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj": {
-                "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj"
+              "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj": {
+                "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj"
               },
-              "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
-                "projectPath": "C:\\Users\\harsh jangid\\Desktop\\Example\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj"
+              "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
+                "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj"
               }
             }
           }
@@ -255,7 +255,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
