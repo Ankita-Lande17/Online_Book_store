@@ -23,7 +23,8 @@ namespace NS.OBS.Repository
                 paraamList.Add(new SqlParameter("@Author", detail.Author));
                 paraamList.Add(new SqlParameter("@Publisher", detail.Publisher));
                 paraamList.Add(new SqlParameter("@Description", detail.Description));
-                context.Database.ExecuteSqlRaw("uspAddBook @BookName,@Category, @Author, @Publisher, @Description", paraamList);
+				paraamList.Add(new SqlParameter("@ImgUrl",detail.ImgUrl));
+                context.Database.ExecuteSqlRaw("uspAddBook @BookName,@Category, @Author, @Publisher, @Description,@ImgUrl", paraamList);
 
             }
             return true;
