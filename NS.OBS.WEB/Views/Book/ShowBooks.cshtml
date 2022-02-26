@@ -1,4 +1,5 @@
 ﻿@using NS.OBS.Data.Entities;
+@using NS.OBS.Model
 @model List<NS.OBS.Model.BookModel>
 
 
@@ -17,13 +18,14 @@
     </thead>
     <tbody>
 	
-	<div class="carousel-item active">
-
-      <img src="@BookDetail.ImgUrl" class="d-block w-100" alt="...">
-    </div>
+	
         @foreach (var item in Model)
         {
         <tr>
+            <div class="carousel-item active">
+
+    <img src="@item.ImgUrl" class="d-block w-100" alt="...">
+    </div>
             <td>@item.BookId</td>
             <td>@item.BookName</td>
             <td>@item.Category</td>

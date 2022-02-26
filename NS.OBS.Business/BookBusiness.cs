@@ -14,7 +14,7 @@ namespace NS.OBS.Business
         {
             _iBookRepo = iBookRepo;
         }
-        public bool AddBook(BookDetail detail)
+        public bool AddBook(BookModel detail)
         {
           return _iBookRepo.AddBook(detail);
 

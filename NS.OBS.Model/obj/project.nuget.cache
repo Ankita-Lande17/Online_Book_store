@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ae1kOHBD/++9oYHjbijllOjvhzilq3yZaKaJv3GOdv+J4HHO2ja4F01k9HlosYqcvYXUNJ5rypovzpkUv6sR3g==",
+  "dgSpecHash": "YbcZiZfDVFUATFJGDjo6a51UJvPlh51HWINk50rKaMoSltMuD+iJxm5c+ZLLxX2vm3zAIYC014mb982Iu1B9Xw==",
   "success": true,
-  "projectFilePath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.0\\microsoft.aspnetcore.http.features.3.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.io.pipelines\\4.7.0\\system.io.pipelines.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

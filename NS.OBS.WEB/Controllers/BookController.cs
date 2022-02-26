@@ -1,14 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using NS.OBS.Business;
 using NS.OBS.Data.Entities;
 using NS.OBS.Model;
 using System;
+using System.IO;
 
 namespace NS.OBS.WEB.Controllers
 {
     public class BookController : Controller
     {
-        private readonly IBookBusiness _IBookBusiness;
+        private readonly IBookBusiness _IBookBusiness=null;
+
 		private readonly IWebHostEnvironment _webHostEnvironment;
         public BookController(IBookBusiness iBookBusiness,IWebHostEnvironment webHostEnvironment)
         {
@@ -24,16 +27,18 @@ namespace NS.OBS.WEB.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(BookDetail detail)
+        public IActionResult Create(BookModel detail)
         {
             if (ModelState.IsValid)
             {
-				string folder = "book/books";
-				folder += Guid.NewGuid().ToString() + "-" + bookModel.bookPhoto.FileName;
-				BookDetail.ImgUrl = "/" + folder;
+              //  BookModel bookModel = new BookModel();
+				string folder = "~/books/bookpic";
+				folder += Guid.NewGuid().ToString() + "-" + detail.BookPhoto.FileName;
+				detail.ImgUrl = "/" + folder;
                 string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);  
 
-                menuModel.DishPhoto.CopyTo(new FileStream(serverFolder, FileMode.Create));
+               detail.BookPhoto.CopyTo(new FileStream(serverFolder, FileMode.Create));
+                
                 _IBookBusiness.AddBook(detail);
                 return RedirectToAction("ShowBooks");
             }

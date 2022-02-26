@@ -6,8 +6,6 @@ namespace NS.OBS.Data.Entities
 {
     public partial class BookDBContext : DbContext
     {
-
-
         public BookDBContext()
         {
         }
@@ -35,6 +33,8 @@ namespace NS.OBS.Data.Entities
                 entity.HasKey(e => e.BookId);
 
                 entity.Property(e => e.Author).HasMaxLength(50);
+
+                entity.Property(e => e.BookName).HasMaxLength(20);
 
                 entity.Property(e => e.Category)
                     .HasMaxLength(50)

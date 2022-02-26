@@ -14,6 +14,19 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Http.Features/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.0",
+          "System.IO.Pipelines": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Http.Features.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Http.Features.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Razor/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1495,6 +1508,15 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
+      "System.IO.Pipelines/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {}
+        }
+      },
       "System.Linq/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2528,6 +2550,9 @@
       "NS.OBS.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "3.1.0"
+        },
         "compile": {
           "bin/placeholder/NS.OBS.Model.dll": {}
         },
@@ -2564,6 +2589,22 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.xml",
         "microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.html.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/3.1.0": {
+      "sha512": "MzNJ2HbB4i5cIDlH5d62uUpHTPlmbjvAo2tx0x+wYRKJyFoRpxkNvFSB/eCCV/vf4K2+zhKkGC5uNyKvXgvaow==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.3.1.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Razor/2.2.0": {
@@ -5483,6 +5524,29 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
+    "System.IO.Pipelines/4.7.0": {
+      "sha512": "S0L7oyWyQdVzD+5xIvcC8h44Vc+FY+qXDCLRh2+YsuBDORNphcxNX+tXR6ByLMjQ/7jDaXxsYBF6qbAr7ZIaFw==",
+      "type": "package",
+      "path": "system.io.pipelines/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
+        "lib/netstandard1.3/System.IO.Pipelines.dll",
+        "lib/netstandard1.3/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
+        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.4.7.0.nupkg.sha512",
+        "system.io.pipelines.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Linq/4.3.0": {
       "sha512": "5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
       "type": "package",
@@ -8279,11 +8343,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Online_book\\Online_Book_store\\NS.OBS.WEB\\NS.OBS.WEB.csproj",
+      "projectUniqueName": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.WEB\\NS.OBS.WEB.csproj",
       "projectName": "NS.OBS.WEB",
-      "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.WEB\\NS.OBS.WEB.csproj",
+      "projectPath": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.WEB\\NS.OBS.WEB.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.WEB\\obj\\",
+      "outputPath": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8300,17 +8364,17 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Online_book\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj": {
-              "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj"
+            "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj": {
+              "projectPath": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Business\\NS.OBS.Business.csproj"
             },
-            "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj": {
-              "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj"
+            "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj": {
+              "projectPath": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Data\\NS.OBS.Data.csproj"
             },
-            "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
-              "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj"
+            "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
+              "projectPath": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj"
             },
-            "D:\\Online_book\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj": {
-              "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj"
+            "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj": {
+              "projectPath": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Repository\\NS.OBS.Repository.csproj"
             }
           }
         }

@@ -59,11 +59,12 @@
 	<div class="form-group">
        <label asp-for="BookPhoto"></label>
       <div class="custom-file">
-          <input asp-for="BookPhoto" class="custom-file-input" id="customFile" />
+          <input type ="file" asp-for="BookPhoto" class="custom-file-input" id="BookPhoto" />
+       @*   <input type="file" name="BookPhoto" id="BookPhoto" />*@
           <label class="custom-file-label" for="customFile" >Choose File</label>
       </div>
        <span asp-validation-for="BookPhoto" class="text-danger"></span>
-    </div
+    </div>
 
     
     <br>

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace NS.OBS.Model
@@ -30,7 +32,8 @@ namespace NS.OBS.Model
         [MaxLength(100, ErrorMessage = "Description must cannot be greter than 100 Characters")]
         public string Description { get; set; }
 		
-		 [NotMapped]
+		
+        [NotMapped]
         public IFormFile BookPhoto { get; set; }
 		
 		public string ImgUrl { get; set; }

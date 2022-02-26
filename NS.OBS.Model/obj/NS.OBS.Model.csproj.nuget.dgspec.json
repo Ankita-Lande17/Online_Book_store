@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {}
+    "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {}
   },
   "projects": {
-    "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
+    "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
+        "projectUniqueName": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
         "projectName": "NS.OBS.Model",
-        "projectPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
+        "projectPath": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Model\\NS.OBS.Model.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Online_book\\Online_Book_store\\NS.OBS.Model\\obj\\",
+        "outputPath": "D:\\Online_book\\OnlineBookStore\\Online_Book_store\\NS.OBS.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

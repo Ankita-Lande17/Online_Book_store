@@ -13,7 +13,7 @@ namespace NS.OBS.Repository
     {
 
         //updated - Shubham
-        public bool AddBook(BookDetail detail)
+        public bool AddBook(BookModel detail)
         {
             using (var context = new BookDBContext())
             {

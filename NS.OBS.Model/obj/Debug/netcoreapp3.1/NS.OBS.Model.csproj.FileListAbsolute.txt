@@ -18,3 +18,13 @@ D:\Online_book\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Mod
 D:\Online_book\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.csproj.CoreCompileInputs.cache
 D:\Online_book\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.dll
 D:\Online_book\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.pdb
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.csproj.AssemblyReference.cache
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.AssemblyInfoInputs.cache
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.AssemblyInfo.cs
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.csproj.CoreCompileInputs.cache
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.dll
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\obj\Debug\netcoreapp3.1\NS.OBS.Model.pdb
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\bin\Debug\netcoreapp3.1\NS.OBS.Model.deps.json
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\bin\Debug\netcoreapp3.1\NS.OBS.Model.dll
+D:\Online_book\OnlineBookStore\Online_Book_store\NS.OBS.Model\bin\Debug\netcoreapp3.1\NS.OBS.Model.pdb

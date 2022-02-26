@@ -8,7 +8,7 @@ namespace NS.OBS.Repository
 {
     public interface IBookRepo
     {
-       public  bool AddBook(BookDetail detail);
+       public  bool AddBook(BookModel detail);
 
         List<BookModel> ShowBooks();
 
