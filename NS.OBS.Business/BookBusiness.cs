@@ -14,9 +14,9 @@ namespace NS.OBS.Business
         {
             _iBookRepo = iBookRepo;
         }
-        public bool AddBook(BookModel bookModel)
+        public bool AddBook(BookDetail detail)
         {
-          return _iBookRepo.AddBook(bookModel);
+          return _iBookRepo.AddBook(detail);
 
         }
         public List<BookModel> ShowBooks()
@@ -30,16 +30,20 @@ namespace NS.OBS.Business
             return _iBookRepo.UpdateBook(id);
         }
 
-        public bool FinalUpdate(BookModel bookModel)
+        public bool FinalUpdate(BookDetail detail, int BookId)
         {
-            return _iBookRepo.FinalUpdate(bookModel);
+            return _iBookRepo.FinalUpdate(detail,BookId);
         }
 
-        public List<BookModel> DeleteBook(int id)
-        {
-            return _iBookRepo.DeleteBook(id);
-        }
 
-        public bool FinalDelete(BookModel bookModel) => _iBookRepo.FinalDelete(bookModel);
+        public bool FinalDelete(BookModel bookModel, int BookId)
+        {
+           return  _iBookRepo.FinalDelete(bookModel,BookId);
+
+        }
+        public BookDetail GetBookById(int BookId)
+        {
+            return _iBookRepo.GetBookById(BookId);
+        }
     }
 }
