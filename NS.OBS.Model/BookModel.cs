@@ -29,5 +29,10 @@ namespace NS.OBS.Model
         [MinLength(3, ErrorMessage = " Description must be atleast 3 characters.")]
         [MaxLength(100, ErrorMessage = "Description must cannot be greter than 100 Characters")]
         public string Description { get; set; }
+		
+		 [NotMapped]
+        public IFormFile BookPhoto { get; set; }
+		
+		public string ImgUrl { get; set; }
     }
 }

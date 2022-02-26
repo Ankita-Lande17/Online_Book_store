@@ -9,9 +9,11 @@ namespace NS.OBS.WEB.Controllers
     public class BookController : Controller
     {
         private readonly IBookBusiness _IBookBusiness;
-        public BookController(IBookBusiness iBookBusiness)
+		private readonly IWebHostEnvironment _webHostEnvironment;
+        public BookController(IBookBusiness iBookBusiness,IWebHostEnvironment webHostEnvironment)
         {
             _IBookBusiness = iBookBusiness;
+			_webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
@@ -26,6 +28,12 @@ namespace NS.OBS.WEB.Controllers
         {
             if (ModelState.IsValid)
             {
+				string folder = "book/books";
+				folder += Guid.NewGuid().ToString() + "-" + bookModel.bookPhoto.FileName;
+				BookDetail.ImgUrl = "/" + folder;
+                string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);  
+
+                menuModel.DishPhoto.CopyTo(new FileStream(serverFolder, FileMode.Create));
                 _IBookBusiness.AddBook(detail);
                 return RedirectToAction("ShowBooks");
             }
