@@ -34,7 +34,6 @@ namespace NS.OBS.Model
 
 
         [NotMapped]
-        // public IFormFile BookPhoto { get; set; }
         [Required(ErrorMessage = "Description is Required.")]
         public IFormFile ImgUrl { get; set; }
     }

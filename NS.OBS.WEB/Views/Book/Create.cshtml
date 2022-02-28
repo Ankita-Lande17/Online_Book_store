@@ -80,20 +80,26 @@
         <br />
 
           <!-- Button -->
-        <div class="col-md-offset-3 col-md-9">
-            <button id="btn-addBook" type="submit" class="btn btn-info"><i class="icon-hand-right"> </i> Submit </button>
-            <span style="margin-left:8px;"></span>
+         <div class="mb-3">
+          <input type="submit" value="save" class="btn btn-primary" onclick="finalinsert()"/>
+          <a asp-action="Index" class="btn btn-secondary">Back to List</a>
         </div>
     </div>
-     <script>
-    function finalinsert(){
-      alert("Data is inserted");
-    }
-  </script>
+   
      <div>
          @Html.ActionLink("Previous", "ShowBooks")
       </div>
+      <script>
+    function finalinsert(){
+      alert("Book Record Added SuccessFully");
+    }
+  </script>
+
 }
-<script src="~/js/AddBook.js"></script>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
 
 

@@ -21,8 +21,7 @@ namespace NS.OBS.WEB.Controllers
             _logger = logger;
             _IBookBusiness = IBookBusiness;
             this._hostEnvironment = webHostEnvironment;
-            //         _IBookBusiness = iBookBusiness;
-            //_webHostEnvironment = webHostEnvironment;
+           
         }
         public IActionResult Index()
         {
@@ -32,6 +31,8 @@ namespace NS.OBS.WEB.Controllers
         {
             return View();
         }
+
+        //Add New Records of Book. 
         [HttpPost]
         public IActionResult Create(BookModel detail)
         {
@@ -40,6 +41,7 @@ namespace NS.OBS.WEB.Controllers
             return RedirectToAction("ShowBooks");
             
         }
+        //Show All the Details of Book
         public IActionResult ShowBooks()
         {
             return View(_IBookBusiness.ShowBooks());
@@ -48,21 +50,21 @@ namespace NS.OBS.WEB.Controllers
         {
             return View(_IBookBusiness.GetBookById(BookId));
         }
+        // Update the Book Detail
 
         [HttpPost]
         public IActionResult Update(BookModel detail, int BookId )
         {
-            //return detail.BookName;
-            //string imageFileName = Path.GetFileNameWithoutExtension(detail.ImgUrl.FileName);
             var CurrentDirectory = Directory.GetCurrentDirectory();
             _IBookBusiness.FinalUpdate(detail,BookId, CurrentDirectory);
-           //return (imageFileName);
             return RedirectToAction("ShowBooks");
         }
         public IActionResult Delete(int BookId)
         {
             return View(_IBookBusiness.GetBookById(BookId));
         }
+
+        // Delete the Book Detail
 
         [HttpPost]
         public IActionResult Delete(BookModel bookModel, int BookId)
@@ -114,10 +116,13 @@ namespace NS.OBS.WEB.Controllers
         //    var res = _IBookBuisness.ShowBooks();
         //    return View(res);
         //}
+
+        //Its showing a detail of particular Book
         public IActionResult Details(int Id)
         {
             return View(_IBookBusiness.GetBookById(Id));
         }
     }
 }
+
 

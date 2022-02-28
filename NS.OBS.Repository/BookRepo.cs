@@ -14,9 +14,10 @@ namespace NS.OBS.Repository
     public class BookRepo : IBookRepo
     {
 
-        //updated - Ankita
+        //Add the Book
         public bool AddBook(BookModel detail,string wwwrootPath)
         {
+            //Image uploading Part
             string imageFileName = Path.GetFileNameWithoutExtension(detail.ImgUrl.FileName);
 
             string imageName = imageFileName + Path.GetExtension(detail.ImgUrl.FileName);
@@ -24,7 +25,7 @@ namespace NS.OBS.Repository
             string imagePath1 = Path.Combine("/image/", imageName);
 
             detail.ImgUrl.CopyTo(new FileStream(imagePath, FileMode.Create));
-            // DB
+            // Add Image in Database using store procedure
             using (var context = new BookDBContext())
             {
                 var paraamList = new List<SqlParameter>();
@@ -39,7 +40,8 @@ namespace NS.OBS.Repository
             }
             return true;
         }
-
+        
+        // Show Book Detail
         public List<BookModel> ShowBooks()
         {
             List<BookModel> returnList = new List<BookModel>();
@@ -53,25 +55,21 @@ namespace NS.OBS.Repository
            
         }
 
-         //public BookDetail GetBookById(int BookId)
-         //{
-         //   BookDBContext context = new BookDBContext();
-         //   var bookId = context.BookDetail.Where(x => x.BookId == BookId).FirstOrDefault();
-         //   return bookId;
-         // }
+       // Book Update
+
         public List<BookModel> UpdateBook(int id)
         {
-           List<BookModel> returnList = new List<BookModel>();
+            List<BookModel> returnList = new List<BookModel>();
             using (var context = new BookDBContext())
             {
 
                 returnList=context.CustomBookModel.FromSqlRaw("uspUpdateBook {0}", id).ToList();
-               
+
             }
             return returnList;
         }
 
-        //Update - Ankita
+        //Update the Book Detail 
         public bool FinalUpdate(BookModel detail, int BookId,string wwwrootPath)
         {
             string imageFileName = Path.GetFileNameWithoutExtension(detail.ImgUrl.FileName);
@@ -97,6 +95,7 @@ namespace NS.OBS.Repository
             return true;
         }
        
+        //Final Delete the Book
         public bool FinalDelete(BookModel bookModel,int BookId)
         {
             using (var context = new BookDBContext())
@@ -108,6 +107,8 @@ namespace NS.OBS.Repository
             }
             return true;
         }
+
+        //Getting Book Record by Id
         public BookDetail GetBookById(int BookId)
         {
             using (var context = new BookDBContext())
