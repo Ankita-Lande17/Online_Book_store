@@ -114,9 +114,9 @@ namespace NS.OBS.WEB.Controllers
         //    var res = _IBookBuisness.ShowBooks();
         //    return View(res);
         //}
-        public IActionResult Details(int BookId)
+        public IActionResult Details(int Id)
         {
-            return View(_IBookBusiness.GetBookById(BookId));
+            return View(_IBookBusiness.GetBookById(Id));
         }
     }
 }

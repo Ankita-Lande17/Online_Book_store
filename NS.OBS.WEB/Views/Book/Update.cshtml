@@ -31,27 +31,8 @@
                 <span asp-validation-for="Category" class="text-danger"></span>
                 </div>
 
-            @*</div>
-            @*<div class = "form-group">
-                <b>
-               @Html.LabelFor(
-                  model => model.Category, htmlAttributes: new{
-                     @class = "control-label col-md-2" })
-				</b>
-               <div class="editor-field">
-     @Html.DropDownListFor(model=>model.Category, new List<SelectListItem>
-                   {
-                       new SelectListItem{Text="Comic", Value="Comic", Selected=true},
-                       new SelectListItem{Text="Novel", Value="Novel", Selected=true},
-                       new SelectListItem{Text="Sports", Value="Sports", Selected=true},
-                   },"Select Category")
-                   </div>
-                   </div>*@
-           @* <div class="form-group">
-                <label asp-for="Category" class="control-label"></label>
-                <input asp-for="Category" class="form-control" />
-                <span asp-validation-for="Category" class="text-danger"></span>
-            </div>*@
+           
+           
            @* <div class="mb-3">
           @Html.LabelFor(model => model.First().Image, htmlAttributes: new { @class = "form-label fw-bold" })  
           @{ var imgPath = @Model.First().Image; }
@@ -60,12 +41,12 @@
           <!--@Html.EditorFor(model => model.First().Image, new { htmlAttributes = new { @class = "form-control", @accept="image/*" } })-->
         </div>
 *@
-            @*<div class="form-group">
+            <div class="form-group">
                 <label asp-for="ImgUrl" class="control-label"></label>
-               @* <input asp-for="ImgUrl" class="form-control" />*@
-                @*<input accept="image/*" class="form-control text-box single-line" type="file" />
+                <input asp-for="ImgUrl" class="form-control " type="file" />
+                @*<input accept="image/*" class="form-control text-box single-line" type="file" />*@
                 <span asp-validation-for="ImgUrl" class="text-danger"></span>
-            </div>*@
+            </div>
             <div class="form-group">
                 <label asp-for="Author" class="control-label"></label>
                 <input asp-for="Author" class="form-control" />

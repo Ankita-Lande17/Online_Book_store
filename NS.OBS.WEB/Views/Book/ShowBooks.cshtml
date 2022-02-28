@@ -29,8 +29,8 @@
     </div>
             <td>@item.BookId</td>
             <td><a asp-controller="Book" asp-action="Details" asp-route-id="@item.BookId">@item.BookName</a></td>
-          @* <td>@Html.ActionLink("Details", "Details", new { BookId = @item.BookId })</td>
-*@            <td>@item.Category</td>
+         
+           <td>@item.Category</td>
             <td>@item.ImgUrl</td>
             <td>@item.Author</td>
             <td>@item.Publisher</td>

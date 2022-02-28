@@ -74,25 +74,24 @@ namespace NS.OBS.Repository
         //Update - Ankita
         public bool FinalUpdate(BookModel detail, int BookId,string wwwrootPath)
         {
-            //string imageFileName = Path.GetFileNameWithoutExtension(detail.ImgUrl.FileName);
-            //string imageFileExtension = Path.GetExtension(detail.ImgUrl.FileName);
+            string imageFileName = Path.GetFileNameWithoutExtension(detail.ImgUrl.FileName);
 
-            //string imageName = imageFileName + imageFileExtension;
-            //string imagePath = Path.Combine(wwwrootPath + "/image", imageName);
-            //string imagePath1 = Path.Combine("/image/", imageName);
+            string imageName = imageFileName + Path.GetExtension(detail.ImgUrl.FileName);
+            string imagePath = Path.Combine(wwwrootPath + "/wwwroot/image", imageName);
+            string imagePath1 = Path.Combine("/image/", imageName);
 
-            //detail.ImgUrl.CopyTo(new FileStream(imagePath, FileMode.Create));
+            detail.ImgUrl.CopyTo(new FileStream(imagePath, FileMode.Create));
             using (var context = new BookDBContext())
             {
                 var paraamList = new List<SqlParameter>();
                 paraamList.Add(new SqlParameter("@BookId", detail.BookId));
                 paraamList.Add(new SqlParameter("@BookName", detail.BookName));
                 paraamList.Add(new SqlParameter("@Category", detail.Category));
-               // paraamList.Add(new SqlParameter("@ImgUrl", imagePath1));
+                paraamList.Add(new SqlParameter("@ImgUrl", imagePath1));
                 paraamList.Add(new SqlParameter("@Author", detail.Author));
                 paraamList.Add(new SqlParameter("@Publisher", detail.Publisher));
                 paraamList.Add(new SqlParameter("@Description", detail.Description));
-                context.Database.ExecuteSqlRaw("uspFinalUpdate @BookId,@BookName,@Category,@Author,@Publisher,@Description ", paraamList);
+                context.Database.ExecuteSqlRaw("uspFinalUpdate @BookId,@BookName,@Category,@ImgUrl,@Author,@Publisher,@Description ", paraamList);
 
             }
             return true;
