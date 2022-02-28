@@ -15,7 +15,7 @@ namespace NS.OBS.Data.Entities
         public string Publisher { get; set; }
         public string Description { get; set; }
 
-        [NotMapped]
-        public IFormFile BookPhoto { get; set; }
+        //[NotMapped]
+        //public IFormFile ImgUrl { get; set; }
     }
 }

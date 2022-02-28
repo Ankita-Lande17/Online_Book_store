@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using NS.OBS.Business;
 using NS.OBS.Data.Entities;
 using NS.OBS.Model;
@@ -10,13 +12,17 @@ namespace NS.OBS.WEB.Controllers
 {
     public class BookController : Controller
     {
-        private readonly IBookBusiness _IBookBusiness=null;
-
-		private readonly IWebHostEnvironment _webHostEnvironment;
-        public BookController(IBookBusiness iBookBusiness,IWebHostEnvironment webHostEnvironment)
+        private readonly ILogger<HomeController> _logger;
+        private readonly IBookBusiness _IBookBusiness;
+        private readonly IWebHostEnvironment _hostEnvironment;
+        public BookController(ILogger<HomeController> logger,IBookBusiness IBookBusiness,IWebHostEnvironment webHostEnvironment)
         {
-            _IBookBusiness = iBookBusiness;
-			_webHostEnvironment = webHostEnvironment;
+           
+            _logger = logger;
+            _IBookBusiness = IBookBusiness;
+            this._hostEnvironment = webHostEnvironment;
+            //         _IBookBusiness = iBookBusiness;
+            //_webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
@@ -29,20 +35,10 @@ namespace NS.OBS.WEB.Controllers
         [HttpPost]
         public IActionResult Create(BookModel detail)
         {
-            if (ModelState.IsValid)
-            {
-              //  BookModel bookModel = new BookModel();
-				string folder = "~/books/bookpic";
-				folder += Guid.NewGuid().ToString() + "-" + detail.BookPhoto.FileName;
-				detail.ImgUrl = "/" + folder;
-                string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);  
-
-               detail.BookPhoto.CopyTo(new FileStream(serverFolder, FileMode.Create));
-                
-                _IBookBusiness.AddBook(detail);
-                return RedirectToAction("ShowBooks");
-            }
-            return View();
+             var CurrentDirectory = Directory.GetCurrentDirectory();
+            _IBookBusiness.AddBook(detail, CurrentDirectory);
+            return RedirectToAction("ShowBooks");
+            
         }
         public IActionResult ShowBooks()
         {
@@ -54,11 +50,13 @@ namespace NS.OBS.WEB.Controllers
         }
 
         [HttpPost]
-        public IActionResult Update(BookDetail detail, int BookId )
+        public IActionResult Update(BookModel detail, int BookId )
         {
-            Console.WriteLine(detail.BookId);
-            detail.BookId = Convert.ToInt32(detail.BookId);
-            _IBookBusiness.FinalUpdate(detail,BookId);
+            //return detail.BookName;
+            //string imageFileName = Path.GetFileNameWithoutExtension(detail.ImgUrl.FileName);
+            var CurrentDirectory = Directory.GetCurrentDirectory();
+            _IBookBusiness.FinalUpdate(detail,BookId, CurrentDirectory);
+           //return (imageFileName);
             return RedirectToAction("ShowBooks");
         }
         public IActionResult Delete(int BookId)
@@ -74,6 +72,49 @@ namespace NS.OBS.WEB.Controllers
             return RedirectToAction("ShowBooks");
         }
         public IActionResult GetBookById(int BookId)
+        {
+            return View(_IBookBusiness.GetBookById(BookId));
+        }
+        //public IActionResult Option(string sort, string searchBook)
+        //{
+        //    if (searchBook != null)
+        //    {
+        //        var resSearch = _IBookBusiness.ShowBooks();
+        //        var resSearching = resSearch.Where(stu => stu.Name.ToUpper().Contains(searchData.ToUpper()));
+        //        if (sort == "Id")
+        //        {
+
+        //            var resSorting = resSearching.OrderBy(s => s.Id);
+        //            return View(resSorting.ToList());
+        //        }
+        //        if (sort == "Name")
+        //        {
+
+        //            var resSorting = resSearching.OrderBy(s => s.Name);
+        //            Console.WriteLine(resSorting.ToList()[0].Name);
+        //            return View(resSorting.ToList());
+        //        }
+        //        return View(resSearching.ToList());
+        //    }
+
+
+        //    if (sort == "Id")
+        //    {
+        //        var resSort = _IBookBuisness.ShowBooks();
+        //        var resSorting = resSort.OrderBy(s => s.Id);
+        //        return View(resSorting.ToList());
+        //    }
+        //    if (sort == "Name")
+        //    {
+        //        var resSort = _IBookBuisness.ShowBooks();
+        //        var resSorting = resSort.OrderBy(s => s.Name);
+        //        Console.WriteLine(resSorting.ToList()[0].Name);
+        //        return View(resSorting.ToList());
+        //    }
+        //    var res = _IBookBuisness.ShowBooks();
+        //    return View(res);
+        //}
+        public IActionResult Details(int BookId)
         {
             return View(_IBookBusiness.GetBookById(BookId));
         }

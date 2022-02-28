@@ -1,8 +1,40 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
+<!DOCTYPE html>
+<html class="noIE" lang="en-US">
+    
+    <div class="text-center">
+    <h1 class="display-4">Online Book Management</h1>
+    <p style="font-size:20px ; ">A book is a medium for recording information in the form of writing or images, typically composed of many pages 
+        (made of papyrus, parchment, vellum, or paper) bound together and protected by a cover.The technical term for 
+        this physical arrangement is codex (plural, codices).</p>
+     @*<p style="font-size:20px ; ">As an intellectual object, a book is prototypically a composition of such great length that it takes a considerable 
+         investment of time to compose and still considered as an investment of time to read. In a restricted sense, 
+         a book is a self-sufficient section or part of a longer composition, a usage reflecting that, in antiquity, 
+         long works had to be written on several scrolls and each scroll had to be identified by the book it contained. 
+         </p>*@
+     
+         <div><td>
+             <img src="~/image/book2.jpg" width="400" height="200" >
+             <img src="~/image/book1.jpg" width="400" height="200" >
+         </td>
+         </div>
+         <div class="parent-style-one">
+             <br />
+             @Html.ActionLink("Add Book","Create","Book")
+             <span>|</span>
+             @Html.ActionLink("Detail","ShowBooks","Book")
+             <span>|</span>
+             @Html.ActionLink("Create","Create","Book")
+             <span>|</span>
+             @Html.ActionLink("Delete","Delete","Book")
+             <span>|</span>
+             @Html.ActionLink("Edit","Update","Book")
+             
+         
+         </div>
+         
+<body>
+    
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+</body>
+</html>

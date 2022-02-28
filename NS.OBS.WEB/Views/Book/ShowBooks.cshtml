@@ -11,6 +11,7 @@
             <th scope="col">BookID</th>
             <th scope="col">BookName</th>
             <th scope="col">Category</th>
+            <th scope="col">ImgUrl</th>
             <th scope="col">Author</th>
             <th scope="col">Publisher</th>
             <th scope="col">Description</th>
@@ -27,12 +28,14 @@
     <img src="@item.ImgUrl" class="d-block w-100" alt="...">
     </div>
             <td>@item.BookId</td>
-            <td>@item.BookName</td>
-            <td>@item.Category</td>
+            <td><a asp-controller="Book" asp-action="Details" asp-route-id="@item.BookId">@item.BookName</a></td>
+          @* <td>@Html.ActionLink("Details", "Details", new { BookId = @item.BookId })</td>
+*@            <td>@item.Category</td>
+            <td>@item.ImgUrl</td>
             <td>@item.Author</td>
             <td>@item.Publisher</td>
             <td>@item.Description</td>
-            <td>@Html.ActionLink("EditBook", "GetBookById", new { BookId = @item.BookId })</td>
+           @* <td>@Html.ActionLink("EditBook", "GetBookById", new { BookId = @item.BookId })</td>*@
             <td>@Html.ActionLink("DeleteBook", "Delete", new { BookId = @item.BookId })</td>
              <td>@Html.ActionLink("UpdateBook", "Update", new { BookId = @item.BookId })</td>
             

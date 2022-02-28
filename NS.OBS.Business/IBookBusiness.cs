@@ -8,12 +8,13 @@ namespace NS.OBS.Business
 {
     public interface IBookBusiness
     {
-        bool AddBook(BookModel detail);
+       public bool AddBook(BookModel detail,string wwwrootPath);
 
         List<BookModel> ShowBooks();
         List<BookModel> UpdateBook(int id);
-        bool FinalUpdate(BookDetail detail,int BookId);
+        bool FinalUpdate(BookModel detail,int BookId, string wwwrootPath);
         bool FinalDelete(BookModel bookModel, int BookId);
         BookDetail GetBookById(int BookId);
+       //public List<BookDetail> GetBookByName();
     }
 }

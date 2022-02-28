@@ -1,0 +1,36 @@
+﻿@model List<NS.OBS.Data.Entities.BookDetail>
+<html>
+<body>
+  <div class="container details">
+  @foreach( var item in Model)
+ {
+    <div class="div-2">
+      <div>
+        <h5>BookId</h5>
+        <p>@item.BookId</p>
+      </div>
+      <div>
+        <h5>BookName</h5>
+        <p>@item.BookName</p>
+      </div>
+      <div>
+        <h5>Category</h5>
+        <p>@item.Category</p>
+      </div>
+      <div>
+        <h5>Author</h5>
+        <p>@item.Author</p>
+      </div>
+      <div>
+        <h5>Publisher</h5>
+        <p>@item.Publisher</p>
+      </div>
+      <div>
+        <h5>Description :</h5>
+        <p>@item.Description</p>
+      </div>
+    </div> 
+  }
+  </div>
+</body>
+</html>

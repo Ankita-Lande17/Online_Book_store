@@ -29,13 +29,13 @@ namespace NS.OBS.Model
 
         [Required(ErrorMessage = "Description is Required.")]
         [MinLength(3, ErrorMessage = " Description must be atleast 3 characters.")]
-        [MaxLength(100, ErrorMessage = "Description must cannot be greter than 100 Characters")]
+        [MaxLength(300, ErrorMessage = "Description must cannot be greter than 300 Characters")]
         public string Description { get; set; }
-		
-		
+
+
         [NotMapped]
-        public IFormFile BookPhoto { get; set; }
-		
-		public string ImgUrl { get; set; }
+        // public IFormFile BookPhoto { get; set; }
+        [Required(ErrorMessage = "Description is Required.")]
+        public IFormFile ImgUrl { get; set; }
     }
 }
